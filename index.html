@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dino Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dino Game 🦖</h1>
+  <p>Press <b>SPACE</b> or tap screen to jump</p>
+  <p>Score: <span id="score">0</span></p>
+
+  <div id="game">
+    <div id="cloud"></div>
+    <div id="road"></div>
+    <div id="dino"></div>
+    <div id="cactus"></div>
+  </div>
+
+  <button onclick="restartGame()" id="restartBtn">Restart</button>
+  <button onclick="toggleTheme()" id="themeBtn">Toggle Theme</button>
+  <button onclick="pauseGame()" id="pauseBtn">⏸ Pause</button>
+  <button onclick="playGame()" id="playBtn" style="display: none;">▶️ Play</button>
+
+  
+  <audio id="jumpSound" src="jump.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
