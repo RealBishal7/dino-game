@@ -1,0 +1,105 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #cbe6f4;
+  transition: background 0.5s;
+  margin: 0;
+  padding: 0;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* #game {
+  width: 600px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid #333;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+} */
+
+#game {
+  width: 600px;
+  height: 200px;         /* Make sure this is tall enough */
+  background-image: url('sky.jpeg'); /* Your custom bg */
+  border: 2px solid #333;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;      /* Prevents dino from going outside */
+}
+
+
+.dark #game {
+  background: #333;
+}
+
+/* #dino {
+  width: 10vw;
+  height: auto;
+  max-width: 100px;
+  min-width: 50px;
+  background-image: url('dino.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 5vw;
+} */
+
+/* #dino {
+  width: 80px;
+  height: 80px;
+  background-image: url('DINO.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+} */
+
+#dino {
+  position: absolute;
+  bottom: 0; /* start at ground level */
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('DINO.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 3px;
+}
+
+#cloud {
+  width: 60px;
+  height: 20px;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  opacity: 0.7;
+}
+
+#restartBtn, #themeBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
